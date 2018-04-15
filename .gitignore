@@ -1,0 +1,7 @@
+ppl-1.1
+*~
+environment/rt.jar
+.DS_Store
+.vagrant/
+target
+scala-tools/ainterp/lib/

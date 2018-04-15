@@ -1,0 +1,3 @@
+#!/bin/bash
+CMD="run-main CommandAInterp $@"
+exec sbt "$CMD"

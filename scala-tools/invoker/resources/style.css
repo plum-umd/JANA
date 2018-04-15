@@ -1,0 +1,168 @@
+/* http://toedter.com/2011/10/26/java-fx-2-0-css-styling/ */
+
+.root {
+    -fx-font-size: 10px;
+    -fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+    -fx-background-color: rgb(50,50,50);
+    -fx-control-inner-background: rgb(50, 50, 50);
+}
+
+.label {
+}
+
+.tree-view .tree-cell {
+}
+
+.tree-table-view .tree-table-cell {
+    -fx-font-size: 10px;
+    -fx-font-family: "monospace";
+}
+
+/* http://stackoverflow.com/questions/18539642/progressbar-animated-javafx */
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(
+                                  from 0px .75em to .75em 0px,
+                                  repeat,
+                                  -fx-accent 0%,
+                                  -fx-accent 49%,
+                                  derive(-fx-accent, 30%) 50%,
+                                  derive(-fx-accent, 30%) 99%
+                              );
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 1 1 1 1;
+    -fx-background-color: transparent;
+}
+
+#TaintsView .table-row-cell {
+    -fx-indent: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-cell-size: 16px;
+    -fx-control-inner-background: black;
+    -fx-font-family: 'monospace';
+}
+
+#ResultPaneFail .content {
+    -fx-background-color: rgb(80,50,50);
+}
+#ResultPane .content {
+    -fx-background-color: rgb(50,80,50);
+}
+
+#WALAView .tree-table-row-cell {
+    -fx-indent: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-cell-size: 12px;
+    -fx-control-inner-background: black;
+    -fx-font-family: 'monospace';
+}
+#WALAView .tree-table-row-cell:selected {
+}
+#WALAView .tree-table-row-cell:focused {
+}
+
+#BytecodeView .content{
+    -fx-background-color: black;
+    -fx-font-family: 'monospace';
+}
+
+#SourceView .tree-table-row-cell {
+    -fx-indent: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-cell-size: 12px;
+    -fx-control-inner-background: black;
+    -fx-font-family: 'monospace';
+    -fx-text-origin: top;
+}
+#SourceView .tree-table-row-cell:selected {
+}
+
+#CFGView {
+    -fx-font-family: 'monospace';
+}
+
+#TaintView .tree-table-row-cell {
+    -fx-indent: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-control-inner-background: black;
+    -fx-font-family: 'monospace';
+    -fx-text-origin: top;
+}
+#TaintView .tree-table-row-cell:selected {
+}
+
+.danger-row {
+    -fx-background-color: #009900;
+}
+
+.tainted-row {
+    -fx-background-color: #990000;
+}
+
+.secret-row {
+    -fx-background-color: #000099;
+}
+
+/*.tree-cell {
+    -fx-indent: 0;
+}*/
+
+/*.tree-table {
+    -fx-background-color: rgb(0,0,0);
+}*/
+
+/*.tree-table .tree-table-cell {
+    -fx-border-color: rgb(10,10,10);
+    -fx-border-width: 0 0 1 0;
+}*/
+
+.tree-table-row-cell > .tree-disclosure-node {
+}
+
+/*
+.label {
+    -fx-background: rgb(0,0,0);
+    -fx-text-fill: rgb(255,255,255);
+}
+
+.gridPane {
+    -fx-background: rgb(0,0,0);
+    -fx-text-fill: rgb(255,255,255);
+}*/
+
+/*.tab {
+    -fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+
+.menu-bar {
+    -fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+
+.tool-bar:horizontal {
+    -fx-background-color:
+    linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+}
+
+.button {
+    -fx-background-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-color: -fx-hover-base;
+}
+
+.table-view {
+    -fx-table-cell-border-color:derive(-fx-base,+10%);
+    -fx-table-header-border-color:derive(-fx-base,+20%);
+}
+
+.split-pane:horizontal > * > .split-pane-divider {
+    -fx-border-color: transparent -fx-base transparent -fx-base;
+    -fx-background-color: transparent, derive(-fx-base,20%);
+    -fx-background-insets: 0, 0 1 0 1;
+}
+
+*/

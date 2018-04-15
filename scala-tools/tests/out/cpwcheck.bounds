@@ -1,0 +1,8 @@
+WARNING: interpreter does not know how to handle arg v1 of type <Application,Lcom/cyberpointllc/stac/naivepwcheck/NaivePWCheck>
+WARNING: interpreter does not know how to handle arg v2 of type <Application,Ljava/lang/String>
+WARNING: cannot handle the value of v15 in symbol table (is #25)
+WARNING: java.lang.Thread.sleep(J)V is not modeled
+BB[SSA:2..4]2 - com.cyberpointllc.stac.naivepwcheck.NaivePWCheck.verifyPassword(Ljava/lang/String;)Z
+lengthⁱⁿ: v2
+lengthⁱⁿ: v2  +  -1
+v9

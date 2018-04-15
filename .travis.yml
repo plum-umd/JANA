@@ -1,0 +1,14 @@
+sudo: required
+dist: trusty
+language: java
+cache: apt
+notifications:
+    slack: plumlab:oJGZiEyx4cQaURizXqA9vcbQ
+    email:
+      - awruef@cs.umd.edu
+      - eric.koskinen@yale.edu
+      - dvanhorn@cs.umd.edu
+os:
+  - linux
+script:
+  ./build-static.sh

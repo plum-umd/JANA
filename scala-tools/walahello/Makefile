@@ -1,0 +1,2 @@
+hello:
+	sbt compile

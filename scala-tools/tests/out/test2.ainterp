@@ -1,0 +1,23 @@
+Final return is
+	Machine() (imprecision factor = 2) returned with:
+		PowerState with (2 disjunct(s)):
+			   AbstractState with:
+				labels =
+					ret	-> Linear
+					v1ⁱⁿ|v0	-> Linear
+					v2ⁱⁿ|v1	-> Linear
+					v3ⁱⁿ|v2	-> Linear
+				linear = LinearContext (4 dim(s)) with (2 conjunct(s)):
+					   -v1ⁱⁿ|v0 + v2ⁱⁿ|v1	≥ 1
+					 ∧ ret	= 1
+			 ∨ AbstractState with:
+				labels =
+					ret	-> Linear
+					v1ⁱⁿ|v0	-> Linear
+					v2ⁱⁿ|v1	-> Linear
+					v3ⁱⁿ|v2	-> Linear
+				linear = LinearContext (4 dim(s)) with (2 conjunct(s)):
+					   ret	= 0
+					 ∧ v1ⁱⁿ|v0 + -v2ⁱⁿ|v1	≥ 0
+		Frame:	block: BB[SSA:-1..-2]4 - PPLTest.test2(III)I
+			pc: -1:exit

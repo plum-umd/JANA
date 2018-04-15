@@ -1,0 +1,24 @@
+entering InterBounds.sumFactorial(I)I
+ | entering InterBounds.factorial(I)I
+ |  | computing bounds for InterBounds.factorial(I)I
+ |  | spec (no spec)
+ |  | 
+ |  | loop bounds BB[SSA:9..11]4 - InterBounds.factorial(I)I
+ |  | loop polynomial [InterBounds.factorial(I)I] v1ⁱⁿ|x
+ |  | 
+ |  | function bounds max(([InterBounds.factorial(I)I] v1ⁱⁿ|x) , 1)
+ |  | function polynomial [InterBounds.factorial(I)I] v1ⁱⁿ|x
+ | leaving InterBounds.factorial(I)I
+ | 
+ | computing bounds for InterBounds.sumFactorial(I)I
+ | spec (no spec)
+ | 
+ | loop bounds BB[SSA:4..6]2 - InterBounds.sumFactorial(I)I
+ | loop polynomial [InterBounds.sumFactorial(I)I] v1ⁱⁿ|x  +  1
+ | 
+ | function bounds ([InterBounds.sumFactorial(I)I] v1ⁱⁿ|x  +  1) * (max(([InterBounds.factorial(I)I] v1ⁱⁿ|x) , 1))
+ | function polynomial [InterBounds.factorial(I)I] v1ⁱⁿ|x * [InterBounds.sumFactorial(I)I] v1ⁱⁿ|x  +  [InterBounds.factorial(I)I] v1ⁱⁿ|x
+leaving InterBounds.sumFactorial(I)I
+
+([InterBounds.sumFactorial(I)I] v1ⁱⁿ|x  +  1) * (max(([InterBounds.factorial(I)I] v1ⁱⁿ|x) , 1))
+[InterBounds.factorial(I)I] v1ⁱⁿ|x * [InterBounds.sumFactorial(I)I] v1ⁱⁿ|x  +  [InterBounds.factorial(I)I] v1ⁱⁿ|x
