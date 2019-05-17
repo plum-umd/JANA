@@ -1,2 +1,0 @@
-publish:
-	sbt publishLocal

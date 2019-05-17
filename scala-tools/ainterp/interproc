@@ -1,4 +1,0 @@
-#!/bin/bash
-# exec java -jar CommandInterProc.jar "$@"
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-exec java $JAVA_OPTS -jar $DIR/../AInterp.jar -a interproc "$@"

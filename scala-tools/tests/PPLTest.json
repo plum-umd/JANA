@@ -1,9 +1,0 @@
-{
-    {
-	"fun":    "PPLTest.test1anno(II)I",
-	"block":  2,
-	"instr":  0,
-	"before": true,
-	"anno":   { "Assume": "GT v2 0" }
-    }
-}

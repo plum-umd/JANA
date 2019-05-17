@@ -1,4 +1,0 @@
-#!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-JAVA_OPTS="-Xmx4G -Xms1G -Xss1G" # -Xprof"
-exec java $JAVA_OPTS -jar $DIR/../AInterp.jar "$@"
