@@ -1,0 +1,21 @@
+Encrypt/Decrypt Utility
+=========================
+
+This program takes a seed value (a Java long), and one of three commands. The 'show'
+command, will reveal a public key that the utility will use for encryption (which is dependent on the seed).
+The 'encrypt' command will take a plaintext argument on the command line, and output a base-10 ciphertext.
+The decrypt command will take a ciphertext argument (namely, the one produced by 'encrypt') and reveal
+the original plaintext using the private key.
+
+The Challenge Program is executed as follows:
+
+    $ java -jar crypt.jar <seed> [show | encrypt <plain> | decrypt <cipher>]
+    (see ./examples/example.sh)
+
+the arguments are as follows:
+
+1. <seed>       A base-10 Java long, to be used as seed for public / private key generation
+2. <plain>      A bash string containing the plaintext for a message you wish to encrypt
+3. <cipher>     A bash string containing the ciphertext for a message you wish to decrypt
+
+The outputs of the program are described in the description above.

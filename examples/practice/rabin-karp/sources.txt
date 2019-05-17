@@ -1,0 +1,5 @@
+* https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm#Use_of_hashing_for_shifting_substring_search
+* http://mcs.uwsuper.edu/sb/425/Prog/RabinKarp.java
+* https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
+* http://algs4.cs.princeton.edu/53substring/RabinKarp.java.html
+

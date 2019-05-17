@@ -1,0 +1,39 @@
+WARNING: interpreter does not know how to handle arg v1 of type <Application,LDelimSearch>
+WARNING: interpreter does not know how to handle arg v2 of type <Primordial,[B>
+WARNING: interpreter does not know how to handle arg v3 of type <Primordial,[B>
+WARNING: interpreter does not know how to handle arg v1 of type <Application,LDelimSearch>
+entering DelimSearch.test()I
+ | entering DelimSearch.search([B[B)I
+WARNING: interpreter does not know how to handle arg v1 of type <Application,LDelimSearch>
+WARNING: interpreter does not know how to handle arg v2 of type <Primordial,[B>
+WARNING: interpreter does not know how to handle arg v3 of type <Primordial,[B>
+ |  | computing bounds for DelimSearch.search([B[B)I
+ |  | spec (no spec)
+WARNING: interpreter does not know how to handle arg v1 of type <Application,LDelimSearch>
+WARNING: interpreter does not know how to handle arg v2 of type <Primordial,[B>
+WARNING: interpreter does not know how to handle arg v3 of type <Primordial,[B>
+WARNING: interpreter does not know how to handle arg v1 of type <Application,LDelimSearch>
+WARNING: interpreter does not know how to handle arg v2 of type <Primordial,[B>
+WARNING: interpreter does not know how to handle arg v3 of type <Primordial,[B>
+ |  | 
+ |  | loop bounds BB[SSA:2..4]2 - DelimSearch.search([B[B)I
+ |  | loop polynomial lengthⁱⁿ: v2
+ |  | 
+ |  | loop bounds BB[SSA:8..10]5 - DelimSearch.search([B[B)I
+ |  | loop polynomial lengthⁱⁿ: v3
+ |  | 
+ |  | function bounds c + (c + (((lengthⁱⁿ: v2) * (max(c , (c + ((lengthⁱⁿ: v3) * (max(c , (max(c , c))))))))) + c))
+ |  | function polynomial c * lengthⁱⁿ: v2  +  3 * c
+ | leaving DelimSearch.search([B[B)I
+ | 
+WARNING: interpreter does not know how to handle arg v1 of type <Application,LDelimSearch>
+ | computing bounds for DelimSearch.test()I
+ | spec (no spec)
+TODO : in FunctionBounds use the bound for this funcall
+ | 
+ | function bounds c + (((c + (c + (((lengthⁱⁿ: v2) * (max(c , (c + ((lengthⁱⁿ: v3) * (max(c , (max(c , c))))))))) + c))) + c) + c)
+ | function polynomial c * lengthⁱⁿ: v2  +  6 * c
+leaving DelimSearch.test()I
+
+c + (((c + (c + (((lengthⁱⁿ: v2) * (max(c , (c + ((lengthⁱⁿ: v3) * (max(c , (max(c , c))))))))) + c))) + c) + c)
+c * lengthⁱⁿ: v2  +  6 * c

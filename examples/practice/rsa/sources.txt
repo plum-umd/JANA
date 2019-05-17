@@ -1,0 +1,6 @@
+[1] https://docs.oracle.com/javase/7/docs/api/java/util/Random.html
+[2] http://developer.classpath.org/doc/java/math/BigInteger-source.html
+[3] https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html
+[4] http://www.java2s.com/Code/Java/Security/SimpleRSApublickeyencryptionalgorithmimplementation.htm
+
+The implementation is based on [4].

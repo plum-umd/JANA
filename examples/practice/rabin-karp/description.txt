@@ -1,0 +1,17 @@
+String Match Search Function
+=========================
+
+This program searches a text file for the first occurence of an exact match against
+another text file (pattern). The chracter set is assumed to be the (256 character) "US_ASCII".
+
+The Challenge Program is executed as follows:
+
+    $ java -jar match.jar <text file> <pattern file>
+    (see ./examples/example.sh)
+
+the arguments are as follows:
+
+1. <text file>      Name of file to be searched
+2. <pattern file>   Name of file containing exact characters to be matched
+
+The program will output the index of the first exact match.

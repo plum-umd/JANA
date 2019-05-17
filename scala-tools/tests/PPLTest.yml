@@ -1,0 +1,43 @@
+# Assertions and assumptions must be logical expressions where
+# propositions are numeric relations. All expressions must be
+# surrounded by a parens presently. See shared/Expression.scala,
+# shared/Label.scala, and shared/Term.scala for details. Look for
+# anything extending the Parsing trait.
+
+# Logical operators, all but Neg are infix binary operators.
+#  ∧ / And
+#  ∨ / Or
+#  ⊕ / Xor (will fail if used)
+#  ¬ / Not (prefix, does not presently work)
+
+# Numeric relations, all but Neg are infix binary operators.
+#  = / Equal
+#  ≠ / NotEqual
+#  ≥ / GreaterOrEqual
+#  > / Greater
+#  < / Lesser
+#  ≤ / LesserOrEqual
+#  - / Neg (prefix)
+
+PPLTest.test1(II)I:
+    [11, before]:
+      - [assume, (v1 > 10)]
+    [11, after]:
+      - [assume, (ret = 100)]
+
+PPLTest.test2(III)I:
+    [1, before]:
+      - [assume, (v1 > 10)]
+      - [assert, (v1 > 15)] # should print assertion failure and
+                            # continue as if it was an assume
+      - [assert, (v1 > 0)]  # should pass
+
+PPLTest.test1annoB(II)I:
+    [1, before]:
+      - [assume, (v1 < 10)]
+
+PPLTest.testAnnotSyntax(III)I:
+    [1, before]:
+       - [assume, (v1 ≠ v2)]
+       - [assume, ((v1 = (v2 + 1)) ∨ (v1 = (v2 - 1)))]
+       - [assume, ((v1 ≥ (- 20)) ∧ (v1 ≤ -10))] # in the first case (- 20) is a unary minus
