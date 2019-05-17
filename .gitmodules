@@ -1,9 +1,0 @@
-[submodule "externs/WALA"]
-	path = externs/WALA
-	url = https://github.com/wala/WALA.git
-[submodule "externs/joana2"]
-	path = externs/joana2
-  url = https://github.com/hothost87/joana-soucis.git
-[submodule "externs/ppl"]
-	path = externs/ppl
-	url = git://git.cs.unipr.it/ppl/ppl.git
