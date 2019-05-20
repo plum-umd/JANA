@@ -57,7 +57,7 @@ make && sudo make install
 
 # Go back to JANA
 cd ~/JANA/externs
-cp ~/zip/build.sh.fixed ./build.sh
+# cp ~/zip/build.sh.fixed ./build.sh ##REPLACED
 ./build.sh # This will fail but it's okay
 
 # Replace the pom.xml file and the build.xml file
@@ -73,7 +73,7 @@ cp ~/tools/ELINA/java_interface/elina.jar lib/
 
 # Copy in top level makefile
 cd ..
-cp ~/zip/Makefile.top ./Makefile
+#cp ~/zip/Makefile.top ./Makefile ##REPLACED
 
 # Make
 make

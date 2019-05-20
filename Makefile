@@ -2,13 +2,10 @@ JAVA_HOME = $(shell ./get_java_home.sh)
 OSNAME = $(shell ./get_os.sh)
 JNI_EXT = $(shell ./get_extension.sh)
 
-all: env extern analyzer tainttool facade
-
-tainttool:
-	cd taint && mvn clean install -q
+all: env extern analyzer facade
 
 extern:
-	cd externs && ./build.sh && ./deploy-joana.sh
+	cd externs && ./build.sh
 
 env:
 	cd environment && make 
@@ -23,5 +20,5 @@ facade: extern
 #ap: ppl-1.1/.install
 #	cd apron && java_home=$(JAVA_HOME) ./configure -java-prefix $(JAVA_HOME) -no-ocaml -ppl-prefix $(PWD)/../ppl-1.1/.install/ -prefix $(PWD)/.install && make && make install
 
-analyzer: tainttool extern env facade
+analyzer: extern env facade
 	cd scala-tools && ./build.sh
