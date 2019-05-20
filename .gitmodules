@@ -1,0 +1,6 @@
+[submodule "externs/ppl"]
+	path = externs/ppl
+	url = git://git.cs.unipr.it/ppl/ppl.git
+[submodule "externs/WALA"]
+	path = externs/WALA
+	url = https://github.com/wala/WALA.git
