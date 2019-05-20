@@ -5,7 +5,7 @@ git clone https://github.com/plum-umd/JANA.git
 
 
 # Import zip with all of the directories
-cp /vagrant/auto_setup/resources.tar.gz .
+cp /vagrant/resources.tar.gz .
 tar xf resources.tar.gz
 
 # Install all dependencies
