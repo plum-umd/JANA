@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Clone the JANA repository here
-git clone https://github.com/hothost87/JANA.git
+git clone https://github.com/plum-umd/JANA.git
 
 
 # Import zip with all of the directories
-cp /vagrant/resources.tar.gz .
+cp /vagrant/auto_setup/resources.tar.gz .
 tar xf resources.tar.gz
 
 # Install all dependencies
