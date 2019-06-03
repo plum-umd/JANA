@@ -78,7 +78,8 @@ cd ..
 make
 
 # Decompress benchmark
-jar xf auto_setup/zip/dacapo-2006-10-MR2.jar
+jar xf auto_setup/zip/dacapo.jar
+mv dacapo-2006-10-MR2/ dacapo
 cd scala-tools
 mkdir -p files/xalan
 touch files/xalan/xalan.txt
